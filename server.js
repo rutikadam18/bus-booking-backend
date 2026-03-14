@@ -10,7 +10,7 @@ app.use(express.json());
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("Connection error:", err));
-  
+
 // Schema for buses
 const busSchema = new mongoose.Schema({
   busName: String,
@@ -51,5 +51,10 @@ app.delete("/book", async (req, res) => {
 
 // Use Render's dynamic port
 const PORT = process.env.PORT || 5000;
+
+app.get("/", (req, res) => {
+  res.send("Bus Booking Backend is running 🚍");
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
