@@ -15,5 +15,8 @@
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "mongoose": "^9.2.4"
-  }
+  },
+  "scripts": {
+  "start": "node server.js"
+}
 }
