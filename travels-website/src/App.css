@@ -1,0 +1,8 @@
+.booked-date {
+  background-color: green !important;
+  color: white !important;
+  border-radius: 50%;
+}
+.card {
+  width: 300px;
+}
